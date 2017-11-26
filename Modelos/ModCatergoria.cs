@@ -8,30 +8,9 @@ namespace Modelos
 {
     public class ModCatergoria
     {
-        #region ID
-        private int _id;
-        public int Id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
-        #endregion
-
-        #region Categoria
-        private string _categoria;
-        public string Categoria
-        {
-            get
-            {
-                return _categoria;
-            }
-
-            set
-            {
-                _categoria = value;
-            }
-        }
-        #endregion
-
+        public int Id{ get; set; }
+        
+        public string Categoria { get; set; }
+        
     }
 }
