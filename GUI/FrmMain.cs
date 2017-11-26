@@ -48,7 +48,7 @@ namespace GUI
         private void btnUsuario_Click(object sender, EventArgs e)
         {
             f = new Formularios();
-            FrmUsuario frm = new FrmUsuario();
+            frmCadUsuario frm = new frmCadUsuario();
             if (f.VerificaDisponibilidade(frm.Name, this) == true)
             {
                 frm.MdiParent = this;
