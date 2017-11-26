@@ -1,0 +1,25 @@
+TFL Estoque Pré Alfa 0.00.1 - Conceito de design e desenvolvimento em camadas
+*******************************************************************************************
+
+Passos para utilização:
+_______________________________________________________________________________________________________________
+1 - Edite o script.sql que se encontra na pasta raiz, substitua a anotação "****URL AQUI****"
+ pelo camino onde se encontra seu banco de dados sql express
+_______________________________________________________________________________________________________________
+2 - Execute o script
+_______________________________________________________________________________________________________________
+3 - O login do sistema será adm	e a senha adm
+_______________________________________________________________________________________________________________
+4 - Apenas o formulário unidade de medida e o formulário Main estão com o design completo, mas faltando 
+as funcionalidades:
+-Editar
+-Excluir
+_______________________________________________________________________________________________________________
+5 - O design dos demais formulários devem ser desconsiderados
+_______________________________________________________________________________________________________________
+
+
+***********************
+*Fábio da Silva Tofoli*
+***********************
+
