@@ -10,15 +10,13 @@ namespace BLL
     public class BLLSubCategoria
     {
         private DALConexao conexao;
-
-        #region Conexão
+        
         public BLLSubCategoria(DALConexao con)
         {
             conexao = con;
         }
-        #endregion
-
-        #region Incluir Sub Categoria
+        
+        
         public string IncluirSubCategoria(ModCatergoria md, int tam)
         {
             if (tam == 0)
@@ -29,9 +27,7 @@ namespace BLL
                 return categoria.Incluir(md);
             }
         }
-        #endregion
-
-        #region Alterar Categoria
+        
         public string AlterarCategoria(ModCatergoria md, int tam)
         {
             if (tam == 0)
@@ -42,9 +38,7 @@ namespace BLL
                 return categoria.Alterar(md);
             }
         }
-        #endregion
-
-        #region Excluir Categoria
+        
         public string ExcluirCategoria(ModCatergoria md, int tam, string valida)
         {
             if (tam == 0)
@@ -60,14 +54,11 @@ namespace BLL
                     return "O nome do Registro não pode ser alterado !";
             }
         }
-        #endregion
-
-        #region Localizar Categoria
+        
         public DataTable LocalizarCategoria(String valor, bool IdOuCat)
         {
             DALCategoria categoria = new DALCategoria(conexao);
             return categoria.Localizar(valor, IdOuCat);
         }
-        #endregion
     }
 }

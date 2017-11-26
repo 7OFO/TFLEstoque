@@ -10,15 +10,12 @@ namespace BLL
     public class BLLUnMedida
     {
         private DALConexao conexao;
-
-        #region Conexão
+        
         public BLLUnMedida(DALConexao con)
         {
             conexao = con;
         }
-        #endregion
-
-        #region Incluir Unidade de Medida
+        
         public string IncluirUnMed(ModUnMedida md, int tam)
         {
             if (tam == 0)
@@ -30,9 +27,7 @@ namespace BLL
             }
 
         }
-        #endregion
-
-        #region Alterar Unidade de Medida
+        
         public string AlterarUMedida(ModUnMedida md, int tam)
         {
             if (tam == 0)
@@ -43,9 +38,7 @@ namespace BLL
                 return med.Alterar(md);
             }
         }
-        #endregion
-
-        #region Excluir Unidade de Medida
+        
         public string ExcluirUMedida(ModUnMedida md, int tam, string valida)
         {
             if (tam == 0)
@@ -60,14 +53,11 @@ namespace BLL
                     return "O nome do Registro não pode ser alterado !";
             }
         }
-        #endregion
-
-        #region Localizar Unidade de Medida
+        
         public DataTable LocalizarUMedida(String valor, bool IdOuUn)
         {
             DALUnMedida med = new DALUnMedida(conexao);
             return med.Localizar(valor, IdOuUn);
         }
-        #endregion
     }
 }

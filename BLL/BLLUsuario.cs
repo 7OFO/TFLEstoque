@@ -6,15 +6,12 @@ namespace BLL
     public class BLLUsuario
     {
         private DALConexao conexao;
-
-        #region conexão
+        
         public BLLUsuario(DALConexao con)
         {
             conexao = con;
         }
-        #endregion
-
-        #region Incluir Usuário
+        
         public string IncluirUsuaio(ModUsuario md, int tam, int senha)
         {
             if (tam == 0)
@@ -32,16 +29,12 @@ namespace BLL
                 }
             }
         }
-        #endregion
-
-        #region Validar Usuário
+       
         public string ValidarUsuaio(ModUsuario md)
         {
             DALUsuario user = new DALUsuario(conexao);
             return user.ValidaUsuario(md);
 
         }
-        #endregion
-
     }
 }
