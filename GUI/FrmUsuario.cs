@@ -48,7 +48,7 @@ namespace GUI
             BLLUsuario u = new BLLUsuario(cn);
             if (tBoxCSenha.Text == tBoxSenha.Text)
             {
-                mensagem = u.IncluirUsuaio(mod, tBoxLogin.TextLength, tBoxSenha.TextLength);
+                //mensagem = u.IncluirUsuaio(mod, tBoxLogin.TextLength, tBoxSenha.TextLength);
 
                 if (mensagem.Contains("sucesso"))
                 {
