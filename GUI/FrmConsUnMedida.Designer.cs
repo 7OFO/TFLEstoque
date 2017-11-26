@@ -56,19 +56,6 @@
             // 
             this.Icone.BackgroundImage = global::GUI.Properties.Resources.medida;
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnFechar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
-            // 
             // pnInfoLocFilho
             // 
             this.pnInfoLocFilho.Controls.Add(this.tBoxConsUMed);

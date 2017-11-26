@@ -87,6 +87,12 @@
     <Compile Include="FrmCadUnMedida.Designer.cs">
       <DependentUpon>FrmCadUnMedida.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUsuario.Designer.cs">
+      <DependentUpon>frmCadUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadUnMedida.resx">
       <DependentUpon>FrmCadUnMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUsuario.resx">
+      <DependentUpon>frmCadUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsCategoria.resx">
       <DependentUpon>FrmConsCategoria.cs</DependentUpon>

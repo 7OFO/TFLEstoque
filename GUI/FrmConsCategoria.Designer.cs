@@ -54,15 +54,6 @@
             // 
             this.Icone.BackgroundImage = global::GUI.Properties.Resources.Categoria;
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            // 
             // pnInfoLocFilho
             // 
             this.pnInfoLocFilho.Controls.Add(this.tBoxConsCat);

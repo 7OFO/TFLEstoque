@@ -42,7 +42,7 @@
             // 
             // Icone
             // 
-            this.Icone.BackgroundImage = global::GUI.Properties.Resources.Categoria;
+            this.Icone.BackgroundImage = global::GUI.Properties.Resources.SubCategoria;
             // 
             // pnInfoCad
             // 
