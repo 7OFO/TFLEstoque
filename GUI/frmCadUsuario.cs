@@ -11,6 +11,12 @@ namespace GUI {
         }
 
         private void btnInserir_Click(object sender, EventArgs e) {
+
+            tsCadStatus.Image = null;
+            tsCadStatus.Text = "";
+            tempo.Start();
+            tsCadProgress.Value = 0;
+
             string mensagem = "";
             ModUsuario mod = new ModUsuario();
 
@@ -28,15 +34,20 @@ namespace GUI {
             mensagem = u.IncluirUsuaio(mod, tBoxLogin.TextLength, tBoxSenha.TextLength, tBoxSenha.Text, tBoxCSenha.Text);
 
             if (mensagem.Contains("sucesso")) {
-                MessageBox.Show(mensagem, "sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tBoxLogin.Clear();
-                tBoxSenha.Clear();
-                tBoxCSenha.Clear();
-                cBoxTipo.SelectedIndex = 0;
+                tsCadStatus.Text = mensagem;
+                tsCadStatus.Image = Properties.Resources.Sucesso;
             }
-            else
-                MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else {
+                tsCadStatus.Text = mensagem;
+                tsCadStatus.Image = Properties.Resources.Aviso;
+            }
+        }
 
+        private void tempo_Tick(object sender, EventArgs e) {
+            if (tsCadProgress.Value < 100)
+                tsCadProgress.Increment(50);
+            else
+                tempo.Stop();
         }
     }
 }

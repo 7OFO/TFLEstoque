@@ -48,7 +48,6 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnProcurar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.BalaoInfo = new System.Windows.Forms.ToolTip(this.components);
             this.pnCabecalho.SuspendLayout();
@@ -200,7 +199,7 @@
             // tsCadStatus
             // 
             this.tsCadStatus.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsCadStatus.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsCadStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsCadStatus.Name = "tsCadStatus";
             this.tsCadStatus.Size = new System.Drawing.Size(0, 22);
             this.tsCadStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -222,7 +221,6 @@
             this.pnAcoesFilho.Controls.Add(this.btnExcluir);
             this.pnAcoesFilho.Controls.Add(this.btnEditar);
             this.pnAcoesFilho.Controls.Add(this.btnProcurar);
-            this.pnAcoesFilho.Controls.Add(this.groupBox1);
             this.pnAcoesFilho.Controls.Add(this.btnInserir);
             this.pnAcoesFilho.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnAcoesFilho.Location = new System.Drawing.Point(0, 0);
@@ -299,15 +297,6 @@
             this.btnProcurar.UseVisualStyleBackColor = false;
             this.btnProcurar.MouseHover += new System.EventHandler(this.btnProcurar_MouseHover);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Location = new System.Drawing.Point(-3, 76);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(429, 10);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            // 
             // btnInserir
             // 
             this.btnInserir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(143)))), ((int)(((byte)(172)))));
@@ -367,7 +356,6 @@
         public System.Windows.Forms.ToolStripProgressBar tsCadProgress;
         public System.Windows.Forms.Panel pnAcoes;
         public System.Windows.Forms.Panel pnAcoesFilho;
-        public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.Button btnInserir;
         public System.Windows.Forms.Button btnProcurar;
         public System.Windows.Forms.Panel pn;

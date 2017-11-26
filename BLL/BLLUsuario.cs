@@ -11,7 +11,7 @@ namespace BLL{
         
         public string IncluirUsuaio(ModUsuario md, int tam, int senha, string senha1, string senha2){
             if (tam == 0)
-                return "O campo login deve ser preenchido !\n";
+                return "O campo login deve ser preenchido !";
             else{
                 if (senha == 0){
                     return "O campo senha deve ser preenchido !";
