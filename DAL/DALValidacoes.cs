@@ -7,23 +7,20 @@ using System.Data.SqlClient;
 using System.Data;
 using Modelos;
 
-namespace DAL
-{
-    public class DALValidacoes
-    {
+namespace DAL{
+    public class DALValidacoes{
+
         private SqlCommand cmd;
         private DALConexao conexao = new DALConexao(DALDadosConexao.ConStr);
 
         #region Verifica se o Registro Existe
-        public bool Existe(String comando)
-        {
+        public bool Existe(String comando){
             
             cmd = new SqlCommand();
             cmd.CommandText = comando;
             cmd.Connection = conexao.Con;
                 SqlDataReader DA = null;
-            try
-            {
+            try{
                 conexao.Conectar();
                 DA = cmd.ExecuteReader();
 
@@ -32,13 +29,11 @@ namespace DAL
                 else
                     return false;
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex){
                 throw new Exception("Falha ao tentar validar\n" +
                                      ex.Message);
             }
-            finally
-            {
+            finally{
                 conexao.Desconectar();
             }
         }
