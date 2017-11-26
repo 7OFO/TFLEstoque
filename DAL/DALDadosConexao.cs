@@ -8,8 +8,6 @@ namespace DAL
         #region String de Conexão
         public static String ConStr
         {
-            //"Data Source=localhost;Initial Catalog=Banco_Teste;User Id=sa;Password=123456"
-            
             get
             {   
                 //Retorno da string de conexão
